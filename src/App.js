@@ -9,22 +9,35 @@ import './App.css';
 function LanguageSelector() {
   const { t, i18n } = useTranslation();
 
-  const changeLanguage = (event) => {
-    i18n.changeLanguage(event.target.value)
-  }
+  const changeLanguage = event => {
+    i18n.changeLanguage(event.target.value);
+  };
 
   return (
-    <RadioGroup defaultValue="en" aria-label="language" name="language-radios" onChange={changeLanguage}>
-      <FormControlLabel value="en" control={<Radio />} label={t('language-en.label')} />
-      <FormControlLabel value="zh" control={<Radio />} label={t('language-zh.label')} />
+    <RadioGroup
+      defaultValue="en"
+      aria-label="language"
+      name="language-radios"
+      onChange={changeLanguage}
+    >
+      <FormControlLabel
+        value="en"
+        control={<Radio />}
+        label={t('language-en.label')}
+      />
+      <FormControlLabel
+        value="zh"
+        control={<Radio />}
+        label={t('language-zh.label')}
+      />
     </RadioGroup>
-  )
+  );
 }
 
 function MyComponent() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  return <h1>{t('name.label')}</h1>
+  return <h1>{t('name.label')}</h1>;
 }
 
 function App() {

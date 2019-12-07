@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 import './index.css';
 
-// import i18n (needs to be bundled ;)) 
+// import i18n (needs to be bundled ;))
 import './i18n';
 
 ReactDOM.render(<App />, document.getElementById('root'));
