@@ -1,6 +1,9 @@
 import React, { Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
-import logo from './logo.svg';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+
 import './App.css';
 
 function LanguageSelector() {
@@ -11,10 +14,10 @@ function LanguageSelector() {
   }
 
   return (
-    <div onChange={changeLanguage}>
-      <input type="radio" value="en" name="language" defaultChecked /> {t('language-en.label')}
-      <input type="radio" value="zh" name="language"/> {t('language-zh.label')}
-    </div>
+    <RadioGroup defaultValue="en" aria-label="language" name="language-radios" onChange={changeLanguage}>
+      <FormControlLabel value="en" control={<Radio />} label={t('language-en.label')} />
+      <FormControlLabel value="zh" control={<Radio />} label={t('language-zh.label')} />
+    </RadioGroup>
   )
 }
 
@@ -27,20 +30,7 @@ function MyComponent() {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header />
       <Suspense fallback="loading">
         <LanguageSelector />
         <MyComponent />
