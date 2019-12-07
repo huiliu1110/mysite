@@ -1,6 +1,39 @@
 {
-  "email.label": "Email",
   "language-en.label": "English",
   "language-zh.label": "简体中文",
-  "name.label": "Hui Liu"
+  "name.label": "Hui Liu",
+  "section.summary.title": "SUMMARY",
+  "section.experience.title": "EXPERIENCE",
+
+  "section.experience.4.title": "Software Engineer II, Frontend",
+  "section.experience.4.company": "Primer Technologies, Inc",
+  "section.experience.4.dates": "Feb 2019 - Present",
+  "section.experience.4.duties.1": "Refactored UI code for one of the company's primary products to be more readable and maintainable by using good design patterns",
+  "section.experience.4.duties.2": "Wrote unit tests and end to end tests to increase code testing coverage",
+  "section.experience.4.duties.3": "Engaged in product design discussions to make company products better",
+  "section.experience.4.duties.4": "Evaluated and integrated new tools, provided presentations about them within the team",
+  "section.experience.4.duties.5": "Balanced tasks with team members to ship products on time with a high-quality bar",
+  
+  "section.experience.3.title": "Software Engineer, JavaScript",
+  "section.experience.3.company": "Primer Technologies, Inc",
+  "section.experience.3.dates": "Apr 2017 – Jan 2019",
+  "section.experience.3.duties.1": "Collaborate with product managers, designers, and other engineers to implement features for multiple company products",
+  "section.experience.3.duties.2": "Developed reusable components for the internal React UI library",
+  "section.experience.3.duties.3": "Fixing defects and bugs for existing products",
+  "section.experience.3.duties.4": "Participated in code review processes",
+
+  "section.experience.2.title": "Web Developer",
+  "section.experience.2.company": "BA Technolinks, Corp (acquired by First Tek DOS, LLC Jul 2016)",
+  "section.experience.2.dates": "Nov 2015 – Mar 2017",
+  "section.experience.2.duties.1": "Developed various new features to consumer-facing web and mobile applications for a financial client using jQuery",
+  "section.experience.2.duties.2": "Implemented customer portfolio visualizations of JSON data using D3.js and jQuery",
+
+  "section.experience.1.title": "PHP Developer",
+  "section.experience.1.company": "BA Technolinks, Corp",
+  "section.experience.1.dates": "Jul 2015 – Oct 2015",
+
+  "section.education.title": "EDUCATION"
 }
+
+
+
