@@ -47,13 +47,23 @@ function MyComponent() {
   return (
     <Fragment>
       <Typography align="right" component="div">
-        <IconButton color="primary">
+        <IconButton
+          aria-label="gitHub link"
+          color="primary"
+          href="https://github.com/haleyhuiliu"
+          target="_blank"
+        >
           <GitHubIcon />
         </IconButton>
-        <IconButton color="primary">
+        <IconButton
+          aria-label="linkedin link"
+          color="primary"
+          href="https://www.linkedin.com/in/hui-hliu"
+          target="_blank"
+        >
           <LinkedInIcon />
         </IconButton>
-        <IconButton color="primary">
+        <IconButton color="primary" href="mailto:huiliu1110@gmail.com">
           <EmailIcon />
         </IconButton>
       </Typography>
